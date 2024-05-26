@@ -1,0 +1,23 @@
+def count_character(input_string, char):
+    """
+    Returns the count of occurrences of a specific character in the input string.
+
+    :param input_string: Input string.
+    :param char: Character to count occurrences of.
+    :return: Number of occurrences of the character in the input string.
+    """
+    # Initialize count to zero
+    count = 0
+    
+    # Iterate through the characters in the input string
+    for c in input_string:
+        # Increment count if the character matches the specified character
+        if c == char:
+            count += 1
+    
+    return count
+
+# Example usage:
+input_str = "hello, world!"
+character = "o"
+print(count_character(input_str, character))  # Output: 2
